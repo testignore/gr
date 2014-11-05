@@ -1,0 +1,115 @@
+
+Installation document, 21th April 2011
+
+This document describes how to build the grante library, version 1.0, on
+Microsoft Windows and Linux systems.
+
+
+
+FOLDERS
+=======
+
+src/               All source code of the grante library and test cases.
+
+MSVisualStudio/    Microsoft Visual Studio 2010, Visual C++ solution file.
+
+examples/          C++ and Matlab code examples of using the library.
+
+
+Building (Windows)
+==================
+You need to have the boost C++ libraries installed, version 1.45 or higher.
+Please see the detailed instructions on http://www.boost.org/ for how to do
+this using Visual C++ 2010.
+
+Typically, boost can be build with Visual Studio 2010 as follows.  Start the
+MSVC C++ 64 bit command prompt and change the directory to the boost source
+code.  Then issue the following two commands:
+
+bootstrap
+.\bjam --prefix=c:\boost64 variant=debug,release link=shared,static
+	threading=single,multi address-model=64 install
+
+
+Library (Visual C++)
+--------------------
+After boost has been build, the solution file in the folder MSVisualStudio/
+can be opened using Visual Studio 2010.  By default the library is a
+statically linkable .lib file.
+
+
+Library (MingW64)
+-----------------
+Alternatively, the library can be build using a recent MingW64 build, using
+GCC version 4.5 or higher.  Note that for this the boost libraries have to be
+build using MingW64 as well.  This is achieved by the following steps:
+
+1. Download mingw-w64-bin_x86_64-mingw_*.zip package from:
+http://sourceforge.net/projects/mingw-w64/files/
+Install and put into path its bin directory.
+
+2. Download and install boost as described here:
+http://sourceforge.net/apps/trac/mingw-w64/wiki/Building%20Boost
+
+3. Adjust the path of your MingW64 installation in setenv.sh, and the paths of
+the boost library in src/Makefile.config.
+
+4. Go to the src/ directory from a Cygwin shell and type
+   source ../setenv.sh
+   make -j 8
+
+5. To run the unit tests, type "make check".
+
+6. (Optional, for documentation only)
+Install python setuptools (from Cygwin, see
+http://pypi.python.org/pypi/setuptools) and run the commands:
+
+   easy_install -U Sphinx
+   cd doc/
+   make html
+
+
+Matlab wrapper
+--------------
+The Matlab wrapper can only be build using Microsoft Visual C++ 2010.  For
+this, edit the pathnames in src/matlab/make_win.m, then from within Matlab go
+to the src/matlab/ directory and run make_win.m by typing "make_win<enter>".
+
+In case you have trouble running the Matlab mex files on another computer,
+ensure you have the "Microsoft Visual Studio 2008 C++ redistributables" for
+Visual Studio 2008 installed.  They are available as a free download (5MB).
+
+
+
+Building (Linux)
+================
+Ensure you have a recent installation of the boost libraries, version 1.45 or
+higher.  Most distributions offer these libraries.
+
+
+Library (G++)
+-------------
+Adjust the parameters in src/Makefile.config, then change to the src/
+directory and type "make" or "make -j 8" to use eight parallel build processes.
+
+To run all unit tests type: "make -j 8 clean check"
+
+Optionally, to generate the documentation install the python "setuptools"
+program and run:
+   easy_install -U Sphinx
+   cd doc/
+   make html
+
+
+Matlab wrapper
+--------------
+Running src/matlab/make.m should build the Matlab wrappers for your system.
+Note that usually the mex files produced on one system are not portable to
+other systems.
+
+
+SUPPORT
+=======
+In case of build problems or further questions regarding the library, please
+contact the author at Sebastian.Nowozin@microsoft.com.
+

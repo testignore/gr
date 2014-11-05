@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>c:\boost64\include\boost-1_45\boost\tr1;c:\boost64\include\boost-1_45;$(IncludePath)</IncludePath>
+    <LibraryPath>c:\boost64\lib;$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib\x64;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetExt>.lib</TargetExt>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>c:\boost64\include\boost-1_45\boost\tr1;c:\boost64\include\boost-1_45;$(IncludePath)</IncludePath>
+    <LibraryPath>c:\boost64\lib;$(VCInstallDir)lib\amd64;$(VCInstallDir)atlmfc\lib\amd64;$(WindowsSdkDir)lib\x64;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\AISInference.cpp" />
+    <ClCompile Include="..\src\BeliefPropagation.cpp" />
+    <ClCompile Include="..\src\BruteForceExactInference.cpp" />
+    <ClCompile Include="..\src\CompositeMinimization.cpp" />
+    <ClCompile Include="..\src\CompositeMinimizationProblem.cpp" />
+    <ClCompile Include="..\src\ConditionedFactorType.cpp" />
+    <ClCompile Include="..\src\Conditioning.cpp" />
+    <ClCompile Include="..\src\ContrastiveDivergence.cpp" />
+    <ClCompile Include="..\src\ContrastiveDivergenceTraining.cpp" />
+    <ClCompile Include="..\src\DiffusionInference.cpp" />
+    <ClCompile Include="..\src\DisjointSet.cpp" />
+    <ClCompile Include="..\src\ExpectationMaximization.cpp" />
+    <ClCompile Include="..\src\Factor.cpp" />
+    <ClCompile Include="..\src\FactorConditioningTable.cpp" />
+    <ClCompile Include="..\src\FactorDataSource.cpp" />
+    <ClCompile Include="..\src\FactorGraph.cpp" />
+    <ClCompile Include="..\src\FactorGraphModel.cpp" />
+    <ClCompile Include="..\src\FactorGraphObservation.cpp" />
+    <ClCompile Include="..\src\FactorGraphPartialObservation.cpp" />
+    <ClCompile Include="..\src\FactorGraphStructurizer.cpp" />
+    <ClCompile Include="..\src\FactorGraphUtility.cpp" />
+    <ClCompile Include="..\src\FactorType.cpp" />
+    <ClCompile Include="..\src\FunctionMinimization.cpp" />
+    <ClCompile Include="..\src\FunctionMinimizationProblem.cpp" />
+    <ClCompile Include="..\src\GibbsInference.cpp" />
+    <ClCompile Include="..\src\GibbsSampler.cpp" />
+    <ClCompile Include="..\src\HyperbolicPrior.cpp" />
+    <ClCompile Include="..\src\InferenceMethod.cpp" />
+    <ClCompile Include="..\src\LaplacePrior.cpp" />
+    <ClCompile Include="..\src\Likelihood.cpp" />
+    <ClCompile Include="..\src\LinearFactorType.cpp" />
+    <ClCompile Include="..\src\LinearProgrammingMAPInference.cpp" />
+    <ClCompile Include="..\src\LogSumExp.cpp" />
+    <ClCompile Include="..\src\MaximumCompositeLikelihood.cpp" />
+    <ClCompile Include="..\src\MaximumCrissCrossLikelihood.cpp" />
+    <ClCompile Include="..\src\MaximumLikelihood.cpp" />
+    <ClCompile Include="..\src\MaximumPseudolikelihood.cpp" />
+    <ClCompile Include="..\src\NaiveMeanFieldInference.cpp" />
+    <ClCompile Include="..\src\NaivePiecewiseTraining.cpp" />
+    <ClCompile Include="..\src\NonlinearRBFFactorType.cpp" />
+    <ClCompile Include="..\src\NormalPrior.cpp" />
+    <ClCompile Include="..\src\ParallelTemperingInference.cpp" />
+    <ClCompile Include="..\src\ParameterEstimationMethod.cpp" />
+    <ClCompile Include="..\src\Prior.cpp" />
+    <ClCompile Include="..\src\Pseudolikelihood.cpp" />
+    <ClCompile Include="..\src\RandomFactorGraphGenerator.cpp" />
+    <ClCompile Include="..\src\RandomSource.cpp" />
+    <ClCompile Include="..\src\RBFNetwork.cpp" />
+    <ClCompile Include="..\src\RBFNetworkRegression.cpp" />
+    <ClCompile Include="..\src\SAMCInference.cpp" />
+    <ClCompile Include="..\src\SimulatedAnnealingInference.cpp" />
+    <ClCompile Include="..\src\StochasticFunctionMinimization.cpp" />
+    <ClCompile Include="..\src\StochasticFunctionMinimizationProblem.cpp" />
+    <ClCompile Include="..\src\StructuredHammingLoss.cpp" />
+    <ClCompile Include="..\src\StructuredLossFunction.cpp" />
+    <ClCompile Include="..\src\StructuredMeanFieldInference.cpp" />
+    <ClCompile Include="..\src\StructuredPerceptron.cpp" />
+    <ClCompile Include="..\src\StructuredSVM.cpp" />
+    <ClCompile Include="..\src\StudentTPrior.cpp" />
+    <ClCompile Include="..\src\SubFactorGraph.cpp" />
+    <ClCompile Include="..\src\SwendsenWangInference.cpp" />
+    <ClCompile Include="..\src\SwendsenWangSampler.cpp" />
+    <ClCompile Include="..\src\TestModels.cpp" />
+    <ClCompile Include="..\src\TreeCoverDecomposition.cpp" />
+    <ClCompile Include="..\src\TreeInference.cpp" />
+    <ClCompile Include="..\src\VAcyclicDecomposition.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\AISInference.h" />
+    <ClInclude Include="..\src\BeliefPropagation.h" />
+    <ClInclude Include="..\src\BruteForceExactInference.h" />
+    <ClInclude Include="..\src\CompositeMinimization.h" />
+    <ClInclude Include="..\src\CompositeMinimizationProblem.h" />
+    <ClInclude Include="..\src\ConditionedFactorType.h" />
+    <ClInclude Include="..\src\Conditioning.h" />
+    <ClInclude Include="..\src\ContrastiveDivergence.h" />
+    <ClInclude Include="..\src\ContrastiveDivergenceTraining.h" />
+    <ClInclude Include="..\src\DiffusionInference.h" />
+    <ClInclude Include="..\src\DisjointSet.h" />
+    <ClInclude Include="..\src\ExpectationMaximization.h" />
+    <ClInclude Include="..\src\Factor.h" />
+    <ClInclude Include="..\src\FactorConditioningTable.h" />
+    <ClInclude Include="..\src\FactorDataSource.h" />
+    <ClInclude Include="..\src\FactorGraph.h" />
+    <ClInclude Include="..\src\FactorGraphModel.h" />
+    <ClInclude Include="..\src\FactorGraphObservation.h" />
+    <ClInclude Include="..\src\FactorGraphPartialObservation.h" />
+    <ClInclude Include="..\src\FactorGraphStructurizer.h" />
+    <ClInclude Include="..\src\FactorGraphUtility.h" />
+    <ClInclude Include="..\src\FactorType.h" />
+    <ClInclude Include="..\src\FunctionMinimization.h" />
+    <ClInclude Include="..\src\FunctionMinimizationProblem.h" />
+    <ClInclude Include="..\src\GibbsInference.h" />
+    <ClInclude Include="..\src\GibbsSampler.h" />
+    <ClInclude Include="..\src\HyperbolicPrior.h" />
+    <ClInclude Include="..\src\InferenceMethod.h" />
+    <ClInclude Include="..\src\LaplacePrior.h" />
+    <ClInclude Include="..\src\Likelihood.h" />
+    <ClInclude Include="..\src\LinearFactorType.h" />
+    <ClInclude Include="..\src\LinearProgrammingMAPInference.h" />
+    <ClInclude Include="..\src\LogSumExp.h" />
+    <ClInclude Include="..\src\MaximumCompositeLikelihood.h" />
+    <ClInclude Include="..\src\MaximumCrissCrossLikelihood.h" />
+    <ClInclude Include="..\src\MaximumLikelihood.h" />
+    <ClInclude Include="..\src\MaximumPseudolikelihood.h" />
+    <ClInclude Include="..\src\NaiveMeanFieldInference.h" />
+    <ClInclude Include="..\src\NaivePiecewiseTraining.h" />
+    <ClInclude Include="..\src\NonlinearRBFFactorType.h" />
+    <ClInclude Include="..\src\NormalPrior.h" />
+    <ClInclude Include="..\src\ParallelTemperingInference.h" />
+    <ClInclude Include="..\src\ParameterEstimationMethod.h" />
+    <ClInclude Include="..\src\Prior.h" />
+    <ClInclude Include="..\src\Pseudolikelihood.h" />
+    <ClInclude Include="..\src\RandomFactorGraphGenerator.h" />
+    <ClInclude Include="..\src\RandomSource.h" />
+    <ClInclude Include="..\src\RBFNetwork.h" />
+    <ClInclude Include="..\src\RBFNetworkRegression.h" />
+    <ClInclude Include="..\src\SAMCInference.h" />
+    <ClInclude Include="..\src\SimulatedAnnealingInference.h" />
+    <ClInclude Include="..\src\StochasticFunctionMinimization.h" />
+    <ClInclude Include="..\src\StochasticFunctionMinimizationProblem.h" />
+    <ClInclude Include="..\src\StructuredHammingLoss.h" />
+    <ClInclude Include="..\src\StructuredLossFunction.h" />
+    <ClInclude Include="..\src\StructuredMeanFieldInference.h" />
+    <ClInclude Include="..\src\StructuredPerceptron.h" />
+    <ClInclude Include="..\src\StructuredSVM.h" />
+    <ClInclude Include="..\src\StudentTPrior.h" />
+    <ClInclude Include="..\src\SubFactorGraph.h" />
+    <ClInclude Include="..\src\SwendsenWangInference.h" />
+    <ClInclude Include="..\src\SwendsenWangSampler.h" />
+    <ClInclude Include="..\src\TestModels.h" />
+    <ClInclude Include="..\src\TreeCoverDecomposition.h" />
+    <ClInclude Include="..\src\TreeInference.h" />
+    <ClInclude Include="..\src\VAcyclicDecomposition.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

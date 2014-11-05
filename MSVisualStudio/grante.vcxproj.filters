@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\src\AISInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BeliefPropagation.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\BruteForceExactInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DiffusionInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GibbsInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\GibbsSampler.cpp">
+      <Filter>Sampling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CompositeMinimization.cpp">
+      <Filter>Optimization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\CompositeMinimizationProblem.cpp">
+      <Filter>Optimization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ContrastiveDivergence.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ContrastiveDivergenceTraining.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ExpectationMaximization.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FunctionMinimization.cpp">
+      <Filter>Optimization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FunctionMinimizationProblem.cpp">
+      <Filter>Optimization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HyperbolicPrior.cpp">
+      <Filter>PriorDistributions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LaplacePrior.cpp">
+      <Filter>PriorDistributions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LogSumExp.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\DisjointSet.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LinearProgrammingMAPInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ParallelTemperingInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NaiveMeanFieldInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SAMCInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SimulatedAnnealingInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StructuredMeanFieldInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NormalPrior.cpp">
+      <Filter>PriorDistributions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MaximumCompositeLikelihood.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MaximumCrissCrossLikelihood.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MaximumLikelihood.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\MaximumPseudolikelihood.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NaivePiecewiseTraining.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ConditionedFactorType.cpp">
+      <Filter>FactorTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\LinearFactorType.cpp">
+      <Filter>FactorTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\NonlinearRBFFactorType.cpp">
+      <Filter>FactorTypes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Pseudolikelihood.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Likelihood.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StochasticFunctionMinimization.cpp">
+      <Filter>Optimization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StochasticFunctionMinimizationProblem.cpp">
+      <Filter>Optimization</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StructuredPerceptron.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StructuredSVM.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SwendsenWangInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SwendsenWangSampler.cpp">
+      <Filter>Sampling</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StudentTPrior.cpp">
+      <Filter>PriorDistributions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RandomSource.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SubFactorGraph.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TreeCoverDecomposition.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\VAcyclicDecomposition.cpp">
+      <Filter>Graph</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TreeInference.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Factor.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FactorDataSource.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FactorGraph.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FactorGraphModel.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FactorGraphObservation.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FactorGraphPartialObservation.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FactorGraphStructurizer.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FactorGraphUtility.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FactorType.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\InferenceMethod.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ParameterEstimationMethod.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Prior.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RBFNetwork.cpp">
+      <Filter>NonlinearFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RBFNetworkRegression.cpp">
+      <Filter>NonlinearFunctions</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\TestModels.cpp">
+      <Filter>Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\RandomFactorGraphGenerator.cpp">
+      <Filter>Testing</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StructuredHammingLoss.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StructuredLossFunction.cpp">
+      <Filter>Learning</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Conditioning.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FactorConditioningTable.cpp">
+      <Filter>Inference</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\AISInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BeliefPropagation.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\BruteForceExactInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DiffusionInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GibbsInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\GibbsSampler.h">
+      <Filter>Sampling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CompositeMinimizationProblem.h">
+      <Filter>Optimization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\CompositeMinimization.h">
+      <Filter>Optimization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ContrastiveDivergence.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ContrastiveDivergenceTraining.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ExpectationMaximization.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FunctionMinimizationProblem.h">
+      <Filter>Optimization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FunctionMinimization.h">
+      <Filter>Optimization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HyperbolicPrior.h">
+      <Filter>PriorDistributions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LaplacePrior.h">
+      <Filter>PriorDistributions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LogSumExp.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\DisjointSet.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LinearProgrammingMAPInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ParallelTemperingInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\NaiveMeanFieldInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SAMCInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SimulatedAnnealingInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StructuredMeanFieldInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\NormalPrior.h">
+      <Filter>PriorDistributions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\NaivePiecewiseTraining.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MaximumCompositeLikelihood.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MaximumCrissCrossLikelihood.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MaximumLikelihood.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MaximumPseudolikelihood.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ConditionedFactorType.h">
+      <Filter>FactorTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\LinearFactorType.h">
+      <Filter>FactorTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\NonlinearRBFFactorType.h">
+      <Filter>FactorTypes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Pseudolikelihood.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Likelihood.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StochasticFunctionMinimizationProblem.h">
+      <Filter>Optimization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StochasticFunctionMinimization.h">
+      <Filter>Optimization</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StructuredSVM.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StructuredPerceptron.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SwendsenWangInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SwendsenWangSampler.h">
+      <Filter>Sampling</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StudentTPrior.h">
+      <Filter>PriorDistributions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RandomSource.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\SubFactorGraph.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TreeCoverDecomposition.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\VAcyclicDecomposition.h">
+      <Filter>Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TreeInference.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Factor.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FactorDataSource.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FactorGraph.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FactorGraphModel.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FactorGraphObservation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FactorGraphPartialObservation.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FactorGraphStructurizer.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FactorGraphUtility.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FactorType.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\InferenceMethod.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ParameterEstimationMethod.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Prior.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RBFNetwork.h">
+      <Filter>NonlinearFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RBFNetworkRegression.h">
+      <Filter>NonlinearFunctions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\TestModels.h">
+      <Filter>Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\RandomFactorGraphGenerator.h">
+      <Filter>Testing</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StructuredLossFunction.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StructuredHammingLoss.h">
+      <Filter>Learning</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FactorConditioningTable.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Conditioning.h">
+      <Filter>Inference</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Learning">
+      <UniqueIdentifier>{ff7fe52f-cb49-4d89-8852-bd6b8453e70f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Inference">
+      <UniqueIdentifier>{29b31e4f-3755-4eb1-832a-acaf99182ac9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sampling">
+      <UniqueIdentifier>{6281d672-e32d-47da-8b74-4c2df4bbfd2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Optimization">
+      <UniqueIdentifier>{d4a8e8cb-ee5a-4057-aad5-188848f9efaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PriorDistributions">
+      <UniqueIdentifier>{e6a08f7d-1990-485e-89da-66af33322236}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{3da918ba-937e-4076-96a2-ecf4dfb76a31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FactorTypes">
+      <UniqueIdentifier>{5bf0d413-8e61-4db3-a780-25e51b502379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graph">
+      <UniqueIdentifier>{12e17c41-91f9-45f7-ba9c-fab7459a232a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{a100223a-cbcb-42f4-932f-c66def30334b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="NonlinearFunctions">
+      <UniqueIdentifier>{aad766fe-5bd3-4a64-9b7e-cce4f06306c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Testing">
+      <UniqueIdentifier>{b969f2b7-1b65-45ac-9f31-16a4eeb2c62f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
